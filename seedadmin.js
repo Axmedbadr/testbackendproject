@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const User = require('./modols/userModel'); // path sax ah
+const User = require('./models/userModel'); // path sax ah
 
 mongoose.connect('mongodb://mongo:FhZtpJhdNhRDWEbfRwAUpSGoqorzFAgr@shortline.proxy.rlwy.net:22415')
   .then(async () => {

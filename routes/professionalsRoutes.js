@@ -1,5 +1,5 @@
 const express = require('express');
-const Professional = require('../modols/ProfessionalModel');
+const Professional = require('../models/ProfessionalModel');
 const auth = require('../middleware/authMiddleware');
 const { validateProfessional, handleValidationErrors } = require('../middleware/validation');
 

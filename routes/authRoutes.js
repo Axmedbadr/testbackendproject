@@ -1,6 +1,6 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
-const User = require('../modols/userModel');
+const User = require('../models/userModel');
 const auth = require('../middleware/authMiddleware');
 const { validateLogin, handleValidationErrors } = require('../middleware/validation');
 const { jwtSecret, jwtExpiration } = require('../config/jwtconfig');
