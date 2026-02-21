@@ -29,7 +29,9 @@ const userSchema = new mongoose.Schema({
     default: null
   }
 }, {
-  timestamps: true
+  timestamps: true,
+  collection: 'users'
+
 });
 
 // 🔐 Pre-save middleware: Hash password
@@ -47,4 +49,4 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
 };
 
 // 📦 Export model
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('User', userSchema, );
